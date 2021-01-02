@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+}
+
+.card {
+  width: 400px;
+  height: 250px;
+  background-color: grey;
+  margin: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.row-one {
+  width: 80%;
+  display: flex;
+}
+.row-one .text {
+  border: 0px;
+  font-size: 30px;
+  background-color: transparent;
+  color: white;
+}
+
+.row-two {
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.row-two .name {
+  font-size: 20px;
+}
+
+.row-two .cvv {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.row-two .cvv span {
+  font-size: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+.row-two .cvv h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
