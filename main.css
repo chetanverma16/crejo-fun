@@ -12,6 +12,7 @@ body {
   font-family: "Roboto";
 }
 
+/* Card Styles */
 .card {
   width: 400px;
   height: 250px;
@@ -63,4 +64,42 @@ body {
   margin: 0;
   padding: 0;
   font-size: 20px;
+}
+
+/* Form Styles */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+form input:hover {
+  border: 1px solid #0984e3;
+}
+form input:active {
+  border: 1px solid #0984e3;
+}
+form input:visited {
+  border: 1px solid #0984e3;
+}
+
+form .submit-btn {
+  border: 0px;
+  background-color: #0984e3;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+}
+form .submit-btn:hover {
+  transform: scale(1.1);
 }
