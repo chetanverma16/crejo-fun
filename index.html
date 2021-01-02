@@ -10,24 +10,31 @@
 
 <body>
     <h1>Credit Card Form</h1>
+    <div class="card-flip-wrapper">
     <div class="card">
+        <div class="card-front">
         <div class="row-one">
             <div class="text" id="cardnumber">---- ----- ----- ---- </div>
         </div>
         <div class="row-two">
             <div class="name" id="creditcardname">--------</div>
-            <div class="cvv">
+            <div class="validity">
                 <span>Valid thru</span>
                 <h3 id="creditcardvalidity">-- / --</h3>
             </div>
         </div>
     </div>
+    <div class="card-back">
+        <div class="cvv"><span id="creditcardcvv"></span></div>
+    </div>
+    </div>
+    </div>
     <form>
-        <input type="number" placeholder="Credit Card Number" id="cardinput">
-        <input type="text" placeholder="Enter Your Name" id="creditcardnameinput">
+        <input type="number" placeholder="Credit Card Number" id="cardinput" onclick="onClickFront()">
+        <input type="text" placeholder="Enter Your Name" id="creditcardnameinput" onclick="onClickFront()">
         <div class="row">
-            <input type="text" placeholder="Valid Thru" id="creditcardvalidityinput">
-            <input type="cvv" placeholder="CVC" id="creditcardicvvinput">
+            <input type="text" placeholder="Valid Thru" id="creditcardvalidityinput" onclick="onClickFront()">
+            <input type="text" placeholder="CVC" id="creditcardcvvinput" maxlength="3"onclick="onClickCvv()">
         </div>
         <input class="submit-btn" type="submit" value="PAY">
     </form>

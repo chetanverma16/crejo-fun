@@ -9,7 +9,8 @@ const creditcardvalidityinput = document.querySelector(
   "#creditcardvalidityinput"
 );
 
-console.log(creditcardvalidityinput);
+const creditcardcvv = document.querySelector("#creditcardcvv");
+const creditcardcvvinput = document.querySelector("#creditcardcvvinput");
 
 // Card Number vaidation
 function regexvalidation(inputtxt, regex) {
@@ -67,3 +68,23 @@ creditcardvalidityinput.addEventListener("change", (e) => {
     creditcardvalidity.textContent = "-- / --";
   }
 });
+
+// Credit Card Cvv Binding
+
+creditcardcvvinput.addEventListener("change", (e) => {
+  if (e.target.value) {
+    creditcardcvv.textContent = `${e.target.value}`;
+  } else {
+    creditcardcvv.textContent = "---";
+  }
+});
+
+const onClickCvv = () => {
+  const cardClass = document.querySelector(".card");
+  cardClass.classList.add("is-flipped");
+};
+
+const onClickFront = () => {
+  const cardClass = document.querySelector(".card");
+  cardClass.classList.remove("is-flipped");
+};
