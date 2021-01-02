@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <Link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
     <title>Crejo Fun Task</title>
 </head>
 
@@ -13,25 +12,27 @@
     <h1>Credit Card Form</h1>
     <div class="card">
         <div class="row-one">
-            <div class="text">1111 1111 1111 1111</div>
+            <div class="text" id="cardnumber">---- ----- ----- ---- </div>
         </div>
         <div class="row-two">
-            <div class="name">Rahul Dhawani</div>
+            <div class="name" id="creditcardname">--------</div>
             <div class="cvv">
                 <span>Valid thru</span>
-                <h3>575</h3>
+                <h3 id="creditcardvalidity">-- / --</h3>
             </div>
         </div>
     </div>
     <form>
-        <input type="number" value="1111 1111 1111 1111" placeholder="Credit Card Number">
-        <input type="text" value="Rahul Dhawani" placeholder="Enter Your Name">
+        <input type="number" placeholder="Credit Card Number" id="cardinput">
+        <input type="text" placeholder="Enter Your Name" id="creditcardnameinput">
         <div class="row">
-            <input type="number" value="11/2020" placeholder="Valid Thru">
-            <input type="cvv" value="916" placeholder="CVC">
+            <input type="text" placeholder="Valid Thru" id="creditcardvalidityinput">
+            <input type="cvv" placeholder="CVC" id="creditcardicvvinput">
         </div>
         <input class="submit-btn" type="submit" value="PAY">
     </form>
 </body>
+
+<script src="main.js"></script>
 
 </html>
